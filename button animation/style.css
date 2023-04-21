@@ -1,0 +1,308 @@
+body{
+    margin:0 ;
+    padding: 0;
+}
+.div1{
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    background-color: black;
+    position: relative;
+}
+.btn1{
+    padding: 5px;
+    margin: 8px;
+    width: 90px;
+    border-radius: 8px;
+    transition: 0.8s;
+    margin: 5px;
+}
+.btn1:hover{
+    background: linear-gradient(to right,grey,pink,purple);
+    color:white;
+    text-shadow: 3px 2px 2px black;
+    transition: 0.8s;
+}
+.btn2{
+    padding: 5px;
+    margin: 8px;
+    width: 90px;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+.btn2:hover{
+    box-shadow: 3px 3px 2px red;
+    transition: 0.6s;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+}
+.btn3{
+    padding: 5px;
+    margin: 8px;
+    width: 90px;
+    border-radius: 8px;
+    transition: 0.8s;
+    
+}
+.btn3:hover{
+    background-color: black;
+    color: white;
+    border-color:red ;
+    transition: 0.8s;
+  /*  text-shadow: 0.5px 0.5px 3px white;*/
+    transition: 0.8s;
+    color: red;
+}
+.btn4{
+    padding: 5px;
+    margin: 8px;
+    width: 90px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.btn4:hover{
+    background-color: black;
+    color: yellow;
+    border-color:yellow;
+    transition: 0.5s;
+    box-shadow: yellow 0px 0px 10px,0px 0px 20px;
+}
+.btn5{
+    margin: 8px;
+    width: 90px;
+    height: 30px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 8px;
+    transition: all 1s;
+    position: relative;    
+    
+}
+.btn5:before, .btn5:after{
+    content: " ";
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 5px;
+    height: 5px;
+}
+.btn5:before{
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;
+    left: -1px;
+    top: -1px;
+    position: absolute;
+    transition: all 1s;    
+}
+.btn5:after{
+    border-bottom: 3px solid blue;
+    border-right: 3px solid blue;
+    right: -1px;
+    bottom: -1px;
+    position: absolute;
+    transition: all 1s;    
+}
+.btn5:hover:before, .btn5:hover:after{
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(to  right,blue ,gray,gold,yellow);
+    background-size: 400%;
+}
+
+.div{
+    height: 45vh;
+    width: 65%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg, rgb(53, 168, 189),rgb(21, 212, 63));    
+
+
+
+}
+.btn6{
+    margin: 10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    transition: all 1s;
+   
+    
+}
+.btn6:after{
+    content: '';
+    height: 0px;
+    width: 0px;
+    background: linear-gradient(45deg,grey,black,yellow);
+    transform: skew(25deg);
+    background-size: 250%;
+    z-index: -2;
+    
+    
+
+
+}
+.btn6:after{
+    height: 30px;
+    width: 0px;
+    position: absolute;
+    right: -20px;
+    bottom: -1px;
+    transform-origin: bottom;
+    transition: all 1s;
+    
+}
+.btn6:hover:after{
+    width: 120px;
+    
+}
+.btn6:hover{
+    color: white;
+    text-shadow: 1px 1px 2px;
+    transition: all 1s;
+}
+
+  
+  
+.btn7{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 4px rgba(49, 29, 29, 0.253),
+                    3px 3px 3px rgba(0, 0, 0, 0.493) ;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 20px;
+    letter-spacing: 0.5px;
+    color: green;
+    font-size: 18px;
+}
+.btn8{
+    height: 35px;
+    width: 150px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 4px rgba(49, 29, 29, 0.253),
+    3px 3px 3px rgba(0, 0, 0, 0.493) ;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    color: red;
+    font-size: 16px;
+}
+.btn9{
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    position: absolute;
+    top: 25px;
+    left: 110px;   
+    transition: all 1s;
+    z-index: 5;
+    overflow: hidden;
+    font-size: 14px;
+}
+.btn9:before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    width: 5px;
+    z-index: -5;
+    transition: all 0.5s;
+}
+.btn9:before{
+    border-left: solid 2px grey;
+    position: absolute;
+    bottom: -5px;
+    left: -12px;
+    height: 38px;
+    transform: skewX(45deg);
+    transition: all 0.5s;
+}
+.btn9:hover:before{
+    border-left: solid 125px grey;
+    transition: all 0.5s;
+}
+.btn9:hover{
+    color: white;
+    transition: all 0.5s;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    height: 32px;
+    width: 95px;
+}
+.btn10{
+    width: 90px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 47px;
+    position: absolute;
+    top: 25px;
+    left: 110px;   
+    transition: all 1s;
+    font-size: 14px;
+    background-color: transparent;
+    z-index: 10;
+    color: white;
+}
+
+    
+.btn22{  
+    height: 30px;
+    width: 90px;
+    margin: 0px 10px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.btn22:hover{
+    color: white;
+    transition: all 0.8s;
+    z-index: 10;
+}
+.btn22:before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 5px;   
+}
+.btn22:before{
+    border-bottom: solid 2px black;
+    margin-bottom: -5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    bottom: 0;
+    left: -10px;
+    transition: all 0.8s;
+    
+}
+.btn22:hover:before{
+    border-bottom: solid 45px black;
+    transform-origin: bottom;
+    width: 120px;
+    transition: all 0.8s;
+    z-index: -5;   
+}
