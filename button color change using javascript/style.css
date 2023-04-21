@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, grey,yellow);
+    background-size: 290%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tgl{
+    height: 60px;
+    width: 180px;
+    background: linear-gradient(to right,pink,blue);
+    color: white;
+    border: none;
+    font-size: larger;
+}
+.tgl.active{
+    background: linear-gradient(to right, gold,brown);
+    border: none;
+    color: black;
+}
