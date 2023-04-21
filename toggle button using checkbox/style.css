@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.lbl{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+.lbl::before{
+    position: absolute;
+    content: '';
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 2.5px;
+    left: 3px;
+    transition: all 0.4s linear;
+}
+input:checked  + .lbl::before{
+    left: 62px;
+    background-color: blueviolet;
+    transition: all 0.4s linear;
+}
+input:checked + .lbl{
+    background-color:cadetblue;
+    transition: all 0.4s linear;
+}
+input{
+    appearance: none;
+}
